@@ -24,6 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="75e83cc4-e8cd-4deb-9e7f-f6171e865c90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +194,7 @@
       <workItem from="1604131956441" duration="6000" />
       <workItem from="1604139050626" duration="73000" />
       <workItem from="1604139606923" duration="27000" />
-      <workItem from="1604164681176" duration="1313000" />
+      <workItem from="1604164681176" duration="2105000" />
     </task>
     <servers />
   </component>
@@ -228,6 +230,10 @@
       <screen x="0" y="23" width="1680" height="971" />
     </state>
     <state x="598" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.971@0.23.1680.971" timestamp="1603806647792" />
+    <state x="100" y="122" width="1480" height="771" key="DiffContextDialog" timestamp="1604171573783">
+      <screen x="0" y="23" width="1680" height="971" />
+    </state>
+    <state x="100" y="122" width="1480" height="771" key="DiffContextDialog/0.23.1680.971@0.23.1680.971" timestamp="1604171573783" />
     <state x="739" y="261" key="FileChooserDialogImpl" timestamp="1603891717455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

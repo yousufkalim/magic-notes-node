@@ -26,6 +26,7 @@ app.use(methodOverride('_method'));
 
 //Routes
 app.get('/', users);
+app.get('/login', users);
 app.post('/', users);
 app.get('/register', users);
 app.post('/register', users);

@@ -48,6 +48,9 @@ Routes
 router.get('/', loginPageAuth, (req, res) => {
     res.status(200).render('login', { successMessage : req.flash('message')});
 });
+router.get('/login', (req, res) => {
+    res.redirect('/');
+});
 
 
 
