@@ -6,14 +6,14 @@ const morgan = require("morgan");
 const cors = require("cors");
 const methodOverride = require('method-override')
 const app = express();
-const port = process.env.PORT;
-const host = process.env.HOST;
+const port = process.env.PORT || 80;
+const host = process.env.HOST || "localhost";
 require("./database");
 const users = require('./Controllers/users');
 
 //EJS stuff
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "Views"));
+app.set("views", path.join(__dirname, "views"));
 
 //Middleware
 app.use("/public", express.static("public"));
