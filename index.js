@@ -13,7 +13,7 @@ const users = require('./Controllers/users');
 
 //EJS stuff
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "Views"));
 
 //Middleware
 app.use("/public", express.static("public"));
