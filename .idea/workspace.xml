@@ -24,14 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75e83cc4-e8cd-4deb-9e7f-f6171e865c90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/error.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/notes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/partials/notes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/notes.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/register.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/update.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/update.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +192,7 @@
       <workItem from="1604131956441" duration="6000" />
       <workItem from="1604139050626" duration="73000" />
       <workItem from="1604139606923" duration="27000" />
-      <workItem from="1604164681176" duration="861000" />
+      <workItem from="1604164681176" duration="1313000" />
     </task>
     <servers />
   </component>
