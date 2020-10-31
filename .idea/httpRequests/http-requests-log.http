@@ -1,0 +1,16 @@
+POST http://127.0.0.1:8000/login?email=yousufkalim@outlook.com&password=21031111
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-10-27T065430.302.txt
+
+###
+
+GET http://127.0.0.1:8000/login
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-10-27T065211.200.html
+
+###
+
