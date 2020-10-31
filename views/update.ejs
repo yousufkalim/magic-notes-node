@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/notes.css">
+    <script defer src="/public/js/main.js"></script>
+    <title>Update Your Note</title>
+</head>
+
+<body>
+
+    <!-- Header Partial -->
+    <%- include('./partials/header.ejs') %>
+
+    <!-- Input Section -->
+
+    <section>
+        <div class="container">
+            <hr>
+            <h1>Welcome to Magic Notes</h1>
+            <div class="input-section">
+                <form action="/update/<%= value._id %>?_method=PUT" method="POST">
+                    <h3>Edit Your Note</h3>
+                    <input type="text" id="title" name="title" placeholder="Enter Title" value="<%= value.title %>">
+                    <textarea name="note" id="input" cols="30" rows="5"
+                        placeholder="Enter your note here"><%= value.note %></textarea>
+                    <!-- Validation error handling ( this logic is controlled by /Controllers/notes.js in Update section ) -->
+                    <% if (error != '') { %>
+                    <p class="input-error"><%= error %></p>
+                    <script>
+                        document.getElementById('input').style.border = '2px solid red';
+                    </script>
+                    <% } %>
+                    <button class="add-btn" id="add-btn" type="submit">Update Note</button>
+                    <a href="/"><button class="del">Cancel</button></a>
+                </form>
+            </div>
+
+            <!-- Note Partial -->
+            <%- include('./partials/notes.ejs') %>
+        </div>
+    </section>
+</body>
+
+</html>

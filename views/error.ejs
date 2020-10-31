@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style/header.css">
+    <link rel="stylesheet" href="/public/style/error.css">
+    <title>Error 404 - Magic Notes</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="/"><span>Magic Notes</span></a>
+        </div>
+    </nav>
+
+    <!--Error Section-->
+    <section class="error">
+        <h1 class="error-heading"><strong>404.</strong> That's an error.</h1>
+        <p class="error-text">The requested URL <%= url %> was not found on this server. <span>That’s all we know.</span></p>
+        <a class="error-link" href="/notes">
+            <button class="error-btn">Go Back</button>
+        </a>
+    </section>
+
+</body>
+</html>

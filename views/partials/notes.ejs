@@ -1,0 +1,22 @@
+<!-- Notes section in note -->
+<hr>
+<h1>Your Notes</h1>
+<hr>
+<div class="card-container" id="card-container">
+    <!-- Implementing note in it's container (This function is controlled by /Controllers/notes.js in Read section) -->
+    <% data.forEach((element, index) => { %>
+    <div class="card">
+        <a href="/update/<%= element._id %>">
+            <h2 class="card-title <%= element.important === true? 'red' : '' %>">
+                <%= element.title === 'Untitled'? `Untitled ${index + 1}` : element.title %></h2>
+        </a>
+        <p class="card-note"><%= element.note %></p>
+        <form action="/mark/<%= element._id %>?_method=PUT" method="POST" style="display: inline;">
+            <button type="submit" class="mark">important</button>
+        </form>
+        <form action="/delete/<%= element._id %>?_method=DELETE" method="POST" style="display: inline;">
+            <button type="submit" class="del">Delete Note</button>
+        </form>
+    </div>
+    <% }); %>
+</div>
