@@ -16,9 +16,9 @@ const notesController = require('./notes')
 
 //Middleware
 router.use(bodyParser.urlencoded({ extended : true }));
-router.use(cookieParser(process.env.SESSION_KEY));
+router.use(cookieParser(process.env.SESSION_KEY || "fvhsk5kj3j6k4b3k35"));
 router.use(session({
-    secret : process.env.SESSION_KEY,
+    secret : process.env.SESSION_KEY || "fvhsk5kj3j6k4b3k35",
     maxAge : 3600000,
     resave : true,
     saveUninitialized : true
