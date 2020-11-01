@@ -39,6 +39,7 @@ app.get("/update/:id", users);
 app.put("/update/:id", users);
 app.all('*', users);
 
+
 //Server Listen
 app.listen(port, host, () => {
     console.log(`Server is running at host ${host} and on port ${port}`);
