@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 80;
 const host = process.env.HOST || "localhost";
 require("./database");
-const users = require('./Controllers/users');
+const routes = require('./routes/routes');
 
 //EJS stuff
 app.set("view engine", "ejs");
@@ -23,25 +23,10 @@ app.use(cors());
 app.use(express.json());
 app.use(methodOverride('_method'));
 
-
-
 //Routes
-app.get('/', users);
-app.get('/login', users);
-app.post('/', users);
-app.get('/register', users);
-app.post('/register', users);
-app.get('/logout', users);
-app.get("/notes", users);
-app.post("/notes", users);
-app.put("/mark/:id", users);
-app.delete("/delete/:id", users);
-app.get("/update/:id", users);
-app.put("/update/:id", users);
-app.all('*', users);
-
+app.use('/', routes);
 
 //Server Listen
 app.listen(port, host, () => {
-    console.log(`Server is running at host ${host} and on port ${port}`);
+    console.log(`Server is running at http://${host}:${port}`);
 });
